@@ -18,4 +18,8 @@ export class RegistrationComponent implements OnInit {
         email: this.fb.control('', [ Validators.email ]),
       })
   }
+
+  clearField() {
+    this.form.reset();
+  }
 }
